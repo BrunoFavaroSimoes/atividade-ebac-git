@@ -1,0 +1,6 @@
+df = pd.read_csv('gasolina.csv')
+sns.lineplot(data = df, x = 'dia', y = 'venda', color='g')
+plt.title('Valor da gasolina por dia')
+plt.xticks()
+plt.savefig('gasolina.png', format='png')
+plt.show()
